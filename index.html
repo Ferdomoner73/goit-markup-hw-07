@@ -58,6 +58,14 @@
             </li>
           </ul>
         </address>
+
+        <div class="menu-button">
+          <button type="button" class="humburger-button js-open-menu">
+            <svg width="32" height="22" class="humburger-icon">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -141,17 +149,50 @@
 
           <ul class="about-ul">
             <li class="item">
-              <img src="./images/computer.jpg" alt="computer" width="360" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/computer@1x.jpg 1x,
+                    ./images/computer@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/computer@1x.jpg"
+                  alt="computer"
+                  width="360"
+                />
+              </picture>
+            </li>
+            <li class="item"></li>
+            <li class="item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/phones-4d@1x.jpg 1x,
+                    ./images/phones-4d@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/phones-4d@1x.jpg"
+                  alt="4dphones"
+                  width="360"
+                />
+              </picture>
             </li>
             <li class="item">
-              <img src="./images/phones-4d.jpg" alt="4dphones" width="360" />
-            </li>
-            <li class="item">
-              <img
-                src="./images/phone-computer.jpg"
-                alt="computer an phone"
-                width="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/phone-computer@1x.jpg 1x,
+                    ./images/phone-computer@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/phone-computer@1x.jpg"
+                  alt="computer an phone"
+                  width="360"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -164,151 +205,249 @@
 
           <ul class="members-ul">
             <li class="item">
-              <img src="./images/mark.jpg" alt="Mark" width="264" />
-              <div class="group">
-                <h3 class="heading common-heading">Mark Guerrero</h3>
-                <p class="common-text">Product Designer</p>
-                <ul class="members-socials-ul">
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+              <div class="members-item-placed normal">
+                <picture>
+                  <source
+                    srcset="./images/mark@1x.jpg 1x, ./images/mark@2x.jpg 2x"
+                  />
+                  <img src="./images/mark@1x.jpg" alt="Mark" width="264" />
+                </picture>
+                <div class="group">
+                  <h3 class="heading common-heading">Mark Guerrero</h3>
+                  <p class="common-text">Product Designer</p>
+                  <ul class="members-socials-ul">
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="item">
-              <img src="./images/tom.jpg" alt="Tom" width="264" />
-              <div class="group">
-                <h3 class="heading common-heading">Tom Ford</h3>
-                <p class="common-text">Frontend Developer</p>
-                <ul class="members-socials-ul">
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+              <div class="members-item-placed reverse">
+                <picture>
+                  <source
+                    srcset="./images/tom@1x.jpg 1x, ./images/tom@2x.jpg 2x"
+                  />
+                  <img src="./images/tom@1x.jpg" alt="Tom" width="264" />
+                </picture>
+                <div class="group">
+                  <h3 class="heading common-heading">Tom Ford</h3>
+                  <p class="common-text">Frontend Developer</p>
+                  <ul class="members-socials-ul">
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="item">
-              <img src="./images/camila.jpg" alt="Camila" width="264" />
-              <div class="group">
-                <h3 class="heading common-heading">Camila Garcia</h3>
-                <p class="common-text">Marketing</p>
-                <ul class="members-socials-ul">
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+              <div class="members-item-placed normal">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/camila@1x.jpg 1x,
+                      ./images/camila@2x.jpg 2x
+                    "
+                  />
+                  <img src="./images/camila@1x.jpg" alt="Camila" width="264" />
+                </picture>
+                <div class="group">
+                  <h3 class="heading common-heading">Camila Garcia</h3>
+                  <p class="common-text">Marketing</p>
+                  <ul class="members-socials-ul">
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="item">
-              <img src="./images/daniel.jpg" alt="Daniel" width="264" />
-              <div class="group">
-                <h3 class="heading common-heading">Daniel Wilson</h3>
-                <p class="common-text">UI Designer</p>
-                <ul class="members-socials-ul">
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="members-socials-item">
-                    <a class="members-socials-link" href="">
-                      <svg width="16" height="16" class="members-socials-icon">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+              <div class="members-item-placed reverse">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/daniel@1x.jpg 1x,
+                      ./images/daniel@2x.jpg 2x
+                    "
+                  />
+                  <img src="./images/daniel@1x.jpg" alt="Daniel" width="264" />
+                </picture>
+                <div class="group">
+                  <h3 class="heading common-heading">Daniel Wilson</h3>
+                  <p class="common-text">UI Designer</p>
+                  <ul class="members-socials-ul">
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="members-socials-item">
+                      <a class="members-socials-link" href="">
+                        <svg
+                          width="16"
+                          height="16"
+                          class="members-socials-icon"
+                        >
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
           </ul>
@@ -436,6 +575,93 @@
       </div>
     </footer>
 
+    <!-- Mobile menu window -->
+    <div class="head-nav-mobile js-menu-container">
+      <button type="button" class="menu-button-close js-close-menu">
+        <svg width="8" height="8" class="close-icon">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="head-ul-mobile">
+          <li>
+            <a
+              href="./index.html"
+              class="heading header-heading header-heading-mobile"
+              >Studio</a
+            >
+          </li>
+          <li>
+            <a
+              href="./portfolio.html"
+              class="heading header-heading header-heading-mobile"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="heading header-heading header-heading-mobile accent-mobile"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer-mobile-modal">
+        <address class="address-mobile">
+          <ul class="address-ul">
+            <li>
+              <a
+                href="tel:+110001111111"
+                class="heading mobile-contacts-selection"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="heading mobile-mail-contacts-selection"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-socials-ul">
+          <li class="members-socials-item">
+            <a class="members-socials-link" href="">
+              <svg width="24" height="24" class="members-socials-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="members-socials-item">
+            <a class="members-socials-link" href="">
+              <svg width="24" height="24" class="members-socials-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="members-socials-item">
+            <a class="members-socials-link" href="">
+              <svg width="24" height="24" class="members-socials-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="members-socials-item">
+            <a class="members-socials-link" href="">
+              <svg width="24" height="24" class="members-socials-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -533,5 +759,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
